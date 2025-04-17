@@ -1,0 +1,234 @@
+/*--------------------------------------------------------------
+15. wpo-contact-pg-section
+--------------------------------------------------------------*/
+.wpo-contact-pg-section {
+
+	.row {
+		align-items: flex-end;
+	}
+
+
+	.wpo-contact-title {
+		max-width: 440px;
+		margin: 0 auto;
+		text-align: center;
+		margin-bottom: 50px;
+
+		@media(max-width:767px) {
+			margin-bottom: 30px;
+		}
+
+		h2 {
+			font-size: 35px;
+			font-size: calc-rem-value(35);
+			font-weight: 700;
+			margin-bottom: 20px;
+
+			@media(max-width:575px) {
+				font-size: 25px;
+				font-size: calc-rem-value(25);
+			}
+		}
+	}
+
+	form input,
+	form select,
+	form textarea {
+		background: $white;
+		width: 100%;
+		height: 50px;
+		border-radius: 0px;
+		box-shadow: none !important;
+		padding-left: 25px;
+		border: 0;
+
+		@include media-query(991px) {
+			height: 45px;
+		}
+
+		&:focus {
+			border-color: $theme-primary-color;
+			background: $white;
+		}
+	}
+
+	form textarea {
+		height: 180px;
+		padding-top: 15px;
+	}
+
+	form {
+		margin: 0 -15px;
+		overflow: hidden;
+
+		@include placeholder-style(#9d9c9c, 15px, normal);
+
+		select {
+			display: inline-block;
+			color: #a9a9a9;
+			cursor: pointer;
+			opacity: 1;
+			padding: 6px 25px;
+			font-size: 15px;
+			font-size: calc-rem-value(15);
+			-webkit-appearance: none;
+			-ms-appearance: none;
+			-o-appearance: none;
+			appearance: none;
+			-moz-appearance: none;
+			background: $white url(../../images/select-icon2.png) no-repeat calc(100% - 15px) center;
+			position: relative;
+
+			&:focus {
+				background: $white url(../../images/select-icon2.png) no-repeat calc(100% - 15px) center;
+			}
+		}
+
+		.submit-area {
+			text-align: center;
+			width: 100%;
+			margin-bottom: 10px;
+			margin-left: 0;
+
+			@include media-query(767px) {
+				margin-bottom: 0;
+			}
+
+			.theme-btn {
+				border-radius: 0px;
+				font-family: $base-font;
+				font-size: 16px;
+
+				&:after {
+					border-radius: 0px;
+				}
+			}
+		}
+	}
+
+	form>div {
+		width: calc(50% - 30px);
+		float: left;
+		margin: 0 15px 25px;
+
+		@include media-query(600px) {
+			width: calc(100% - 25px);
+			float: none;
+		}
+	}
+
+	form .fullwidth {
+		width: calc(100% - 25px);
+		float: none;
+		clear: both;
+	}
+
+	.office-info {
+		padding-top: 50px;
+		margin-left: 50px;
+
+
+		@media(max-width:991px) {
+			margin-left: 0;
+		}
+
+		.office-info-item {
+			padding: 20px;
+			border: 1px solid #EFEFEF;
+			margin-bottom: 15px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			.office-info-icon {
+				float: left;
+				overflow: hidden;
+				margin-right: 20px;
+
+				.icon {
+					.fi {
+						&:before {
+							font-size: 30px;
+							color: $theme-primary-color;
+						}
+					}
+				}
+			}
+
+			.office-info-text {
+				overflow: hidden;
+
+				h2 {
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 19px;
+					color: $theme-primary-color-s2;
+				}
+
+				p {
+					margin-bottom: 0;
+					font-weight: 400;
+					font-size: 15px;
+					line-height: 18px;
+					color: #A3A3A3;
+				}
+			}
+		}
+
+	}
+
+	.wpo-contact-form-area {
+		padding: 50px;
+		background: $section-bg-color;
+		padding-bottom: 0;
+		position: relative;
+		z-index: 99;
+		margin-top: -150px;
+
+		@media(max-width:767px) {
+			padding: 30px;
+			padding-top: 50px;
+		}
+
+		@media(max-width:575px) {
+			margin-top: 0;
+			margin-top: 50px;
+		}
+	}
+
+
+}
+
+.wpo-contact-map-section {
+	padding: 100px 80px;
+	padding-bottom: 0;
+
+	@media(max-width:1600px) {
+		padding: 100px 30px;
+		padding-bottom: 0;
+	}
+	@media(max-width:1199px) {
+		padding: 100px 0px;
+		padding-bottom: 0;
+	}
+	@media(max-width:991px) {
+		padding: 90px 0px;
+		padding-bottom: 0;
+	}
+
+	.wpo-contact-map {
+		height: 550px;
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+		border: 0;
+		outline: 0;
+	}
+
+	h2.hidden {
+		display: none;
+	}
+}

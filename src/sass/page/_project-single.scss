@@ -1,0 +1,184 @@
+/*=====================================================
+8. wpo-project-single
+======================================================*/
+.wpo-project-single-area {
+    .wpo-project-single-wrap {
+        .wpo-project-single-title {
+            h3 {
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 55px;
+                margin-bottom: 20px;
+
+                @media(max-width:767px) {
+                    font-size: 25px;
+                    line-height: 35px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
+        .wpo-project-single-item {
+            margin-bottom: 40px;
+
+            .wpo-project-single-main-img {
+                margin-bottom: 30px;
+            }
+
+        }
+
+        .wpo-project-single-item {
+
+            .sortable-gallery {
+                margin-bottom: 40px;
+
+                .img-holder {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                    }
+
+
+                    .hover-content {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: transparentize($theme-primary-color, .2);
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        text-align: center;
+                        transform: scale(0);
+                        transition: all .3s;
+
+                        i {
+                            color: $white;
+                            font-size: 30px;
+                        }
+                    }
+
+                    &:hover {
+                        .hover-content {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+
+            .project-video-wrap {
+                margin-top: 40px;
+                position: relative;
+
+                img {
+                    @media(max-width:767px) {
+                        min-height: 200px;
+                        object-fit: cover;
+                    }
+                }
+
+                .video-btn {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    @include center-by-translating();
+                    width: 63px;
+                    height: 63px;
+                    line-height: 63px;
+                    background: $theme-primary-color;
+                    border-radius: 50%;
+                    z-index: 1;
+                    display: block;
+                    text-align: center;
+                    color: $white;
+
+                    &:after {
+                        position: absolute;
+                        left: -12px;
+                        top: -12px;
+                        width: 140%;
+                        height: 140%;
+                        background: transparentize($theme-primary-color, .5);
+                        content: "";
+                        -webkit-animation: spineer 2s infinite;
+                        animation: spineer 2s infinite;
+                        border-radius: 50%;
+                        z-index: -1;
+                    }
+
+                    @-webkit-keyframes spineer {
+                        from {
+                            box-shadow: 0 0 0 0 rgba(255, 112, 99, 0.99);
+                        }
+
+                        to {
+                            box-shadow: 0 0 0 45px rgba(255, 112, 99, 0.01);
+                        }
+                    }
+
+                    @keyframes spineer {
+                        from {
+                            box-shadow: 0 0 0 0 rgba(255, 112, 99, 0.99);
+                        }
+
+                        to {
+                            box-shadow: 0 0 0 45px rgba(255, 112, 99, 0.01);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .project-info {
+        background: $theme-primary-color-s2;
+        padding: 50px;
+
+        @media(max-width:1199px){
+            padding: 25px 20px;
+        }
+
+        h3{
+            color: $white;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 37px;
+                color: $white;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                position: relative;
+
+                &:before{
+                    position: absolute;
+                    left: 35%;
+                    top: 0;
+                    content: "::";
+                }
+
+                &:last-child{
+                    padding-bottom: 0;
+                }
+
+                span{
+                    display: block;
+                    flex-basis: 50%;
+                    text-align: left;
+                    font-weight: 400;
+                    position: relative;
+                }
+            }
+        }
+    }
+}

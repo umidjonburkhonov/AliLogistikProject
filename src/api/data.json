@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "proImg": "/product/1.jpg",
+    "singImg": "/product/product-single/1.jpg",
+    "title": "Big Parcel 6-20kg",
+    "slug": "Fresh-key-Lime",
+    "price": "30.00",
+    "delPrice": "20.00",
+    "brand":"Book",
+    "size":"Xl",
+    "category":"Transport"
+  },
+  {
+    "id": 2,
+    "proImg": "/product/2.jpg",
+    "singImg": "/product/product-single/2.jpg",
+    "title": "Brown Paper Box",
+    "slug": "Red-Radish",
+    "price": "22.00",
+    "delPrice": "20.00",
+    "brand":"Book",
+    "size":"XXl",
+    "category":"Transport"
+  },
+  {
+    "id": 3,
+    "proImg": "/product/3.jpg",
+    "singImg": "/product/product-single/3.jpg",
+    "title": "Medium Parcel 2-6kg",
+    "slug": "Cauliflower",
+    "price": "25.00",
+    "delPrice": "15.00",
+    "brand":"Book",
+    "size":"L",
+    "category":"Logistic"
+  },
+  {
+    "id": 4,
+    "proImg": "/product/4.jpg",
+    "singImg": "/product/product-single/4.jpg",
+    "title": "Small Parcel 1-2kg",
+    "slug": "Yellow-Corn",
+    "price": "16.00",
+    "delPrice": "10.00",
+    "brand":"Book",
+    "size":"M",
+    "category":"Warehouses"
+  },
+  {
+    "id": 5,
+    "proImg": "/product/5.jpg",
+    "singImg": "/product/product-single/5.jpg",
+    "title": "Big Parcel 10-30kg",
+    "slug": "Red-Onion",
+    "price": "15.00",
+    "delPrice": "10.00",
+    "brand":"Book",
+    "size":"XXl",
+    "category":"Logistic"
+  },
+  {
+    "id": 6,
+    "proImg": "/product/6.jpg",
+    "singImg": "/product/product-single/6.jpg",
+    "title": "Small Parcel 1-2kg",
+    "slug": "Lens-Broccoli",
+    "price": "18.00",
+    "delPrice": "12.00",
+    "brand":"Book",
+    "size":"Xl",
+    "category":"Logistic"
+  },
+  {
+    "id": 7,
+    "proImg": "/product/7.jpg",
+    "singImg": "/product/product-single/7.jpg",
+    "title": "Small Parcel 2-3kg",
+    "slug": "Orange-Paprika",
+    "price": "12.00",
+    "delPrice": "06.00",
+    "brand":"Book",
+    "size":"Xl",
+    "category":"Warehouses"
+  },
+  {
+    "id": 8,
+    "proImg": "/product/8.jpg",
+    "singImg": "/product/product-single/8.jpg",
+    "title": "Small Parcel 2-3kg",
+    "slug": "Fresh-Mushrooms",
+    "price": "13.00",
+    "delPrice": "06.00",
+    "brand":"Book",
+    "size":"Xl",
+    "category":"Transport"
+  }
+
+]

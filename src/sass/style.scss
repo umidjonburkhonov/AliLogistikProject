@@ -1,0 +1,131 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+Theme Name:     Transfar – Transportation & Logistics HTML Template
+Version:        1.0.0
+-------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+1. General
+	1.1 Theme Reset Style
+	1.2 Global Elements
+
+2. header
+	2.1 topbar
+	2.2 navigation
+
+3. content
+	3.1 wpo-hero-slider
+	3.2 wpo-fun-fact-section
+	3.3 wpo-about-section
+	3.4 wpo-service-area
+	3.5 wpo-video-section
+	3.6 wpo-project-section
+	3.7 wpo-cta-section
+	3.8 partners-section
+	3.9 wpo-blog-section
+
+4. wpo-footer
+
+5. Home-style-2
+   5.1 wpo-about-section-s2
+   5.2 wpo-fun-fact-section-s2
+   5.3 wpo-service-area-s2
+   5.4 wpo-video-section-s2
+   5.5 wpo-team-section
+   5.6 wpo-project-section-s2
+   5.7 wpo-testimonial-section-s2
+   5.8 wpo-calculation-section
+   5.9 wpo-blog-section-s2
+   5.10 wpo-subscribe-section
+
+6. Home-style-3
+   6.1 wpo-about-section-s2
+   6.2 wpo-service-area-s3
+   6.3 wpo-team-section-s3
+   6.4 wpo-video-section-s3
+   6.5 wpo-project-section-s3
+   6.6 wpo-testimonial-section-s3
+   6.7 wpo-calculation-section-s2
+   6.8 wpo-blog-section-s3
+   6.9 wpo-subscribe-section-s2
+
+7. wpo-service-single
+
+8. wpo-project-single
+
+9. wpo-cart-page-style
+
+10. wpo-checkout-page-style
+
+11. wpo-shop-page
+
+12. wpo-shop-single-page
+
+13. wpo-blog-pg-section
+
+14. wpo-blog-single-section
+
+15. wpo-contact-pg-section
+
+16. error-404-section
+
+----------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+1. General
+----------------------------------------------------------------*/
+
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/social-links";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/blog-sidebar";
+@import "components/pagination";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+// page
+@import "page/home-default";
+@import "page/home-style-2";
+@import "page/home-style-3";
+@import "page/service-single";
+@import "page/project-single";
+@import "page/_cart";
+@import "page/_checkout";
+@import "page/_shop";
+@import "page/_shop-single";
+@import "page/blog";
+@import "page/blog-single";
+@import "page/contact";
+@import "page/error-404";
+
+
+
+
+
+
+
